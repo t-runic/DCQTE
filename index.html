@@ -486,14 +486,14 @@ frameborder="1"
     </script>
     
 <script>
-    // Wait for pygbag to be ready, then start automatically
-    document.addEventListener('pygbag_ready', () => {
-        // The start button is usually hidden when starting programmatically,
-        // so just trigger the start method directly.
-        if (typeof start_app === 'function') {
-            start_app();
-        }
-    });
+  window.addEventListener('load', () => {
+    // Find the start button element
+    const startButton = document.getElementById('start-button');
+    if (startButton) {
+      // Automatically click the button after a short delay
+      setTimeout(() => startButton.click(), 100);
+    }
+  });
 </script>
 
 </body>
