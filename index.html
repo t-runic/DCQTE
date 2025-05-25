@@ -485,16 +485,16 @@ frameborder="1"
 
     </script>
     
-    <script>
-        // Wait for pygbag to be ready, then start automatically
-        document.addEventListener('pygbag_ready', () => {
-            // The start button is usually hidden when starting programmatically,
-            // so just trigger the start method directly.
-            if (typeof start_app === 'function') {
-                start_app();
-            }
-        });
-    </script>
+<script>
+    // Wait for pygbag to be ready, then start automatically
+    document.addEventListener('pygbag_ready', () => {
+        // The start button is usually hidden when starting programmatically,
+        // so just trigger the start method directly.
+        if (typeof start_app === 'function') {
+            start_app();
+        }
+    });
+</script>
 
 </body>
 </html>
